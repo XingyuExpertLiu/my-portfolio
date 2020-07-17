@@ -13,16 +13,45 @@
 // limitations under the License.
 
 /**
- * Adds a random greeting to the page.
+ * Make a left tab longer.
  */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+function longer(x) {
+  x.style.width = "150px";
+}
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+/**
+ * Restore the tab.
+ */
+function shorter(x) {
+  x.style.width = "120px";
+}
 
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+/**
+ * Initialize the content of textarea.
+ */
+function load() {
+  var t = document.getElementById("text");
+  t.innerText = "This is my portfolio.\nI'm Xingyu Liu from Beijing Jiaotong University. I'll enter my 4th year studying computer science this September. Nice to meet you!";
+}
+
+/**
+ * Change the content of textarea.
+ */
+function click1() {
+  var text = document.getElementById("text");
+  var gallery = document.getElementsByClassName("gallery");
+  text.innerText = "Some of My Projects:\r\n1.Front end for the game Splendor(in Google Girl Hackathon V)\n2.A gomoku game by HTML";
+  for (var i = 0; i < gallery.length; i++)
+  {
+    gallery[i].style.display = "none";
+  }
+}
+function click2() {
+  var text = document.getElementById("text");
+  var gallery = document.getElementsByClassName("gallery");
+  text.innerText = "Image Gallery:"
+  for (var i = 0; i < gallery.length; i++)
+  {
+    gallery[i].style.display = "block";
+  }
 }

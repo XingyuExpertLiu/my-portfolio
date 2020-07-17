@@ -2,17 +2,29 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
-  <body>
+  <body onload="load()">
+    <div id="up-bar">
+      <div id="icon">
+        <img src="/images/1.jpg" alt="Hi!">
+      </div>
+      <div id="name">Xingyu Liu's Portfolio</div>
+      <div id="gitlink">
+        <a href="https://github.com/XingyuExpertLiu">Github</a>
+      </div>
+    </div>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+      <div id="left-bar">
+        <div class="tab" onmousemove="longer(this)" onmouseout="shorter(this)" onclick="click1()">My Projects</div>
+        <div class="tab" onmousemove="longer(this)" onmouseout="shorter(this)" onclick="click2()">Image Gallery</div>  
+      </div>
+      <div id="right-bar">
+        <textarea name="text" id="text" cols="30" rows="10"></textarea>
+        <div class="gallery"><img class="pic" src="/images/2.jpg" alt="Took by my friend in a park."></div>
+        <div class="gallery"><img class="pic" src="/images/3.jpg" alt="Took near my home last December"></div>
+      </div>
     </div>
   </body>
 </html>
