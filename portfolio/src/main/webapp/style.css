@@ -1,73 +1,72 @@
-  #up-bar {
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.4);
-    font-size: x-large;    
-  }
+#up-bar {
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: x-large;    
+}
 
-  #icon {
-    margin-left: 5px;
-    margin-right: 5px;
-    float: left;
-    display: inline;
-  }
+#icon {
+  margin-left: 5px;
+  margin-right: 5px;
+  float: left;
+  display: inline;
+}
 
-  #name {
-    margin-left: 5px;
-    margin-right: 5px;
-    text-align: left;
-    float: left;
-    display: inline;
-  }
+#name {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: left;
+  float: left;
+  display: inline;
+}
 
-  #gitlink {
-    float: right;
-    text-align: right;
-    display: inline;
-  }
+#gitlink {
+  float: right;
+  text-align: right;
+  display: inline;
+}
 
-  #content {
-    height: 700px;
-    width: 1000px;
-    margin-top: auto;
-    margin-left: 0px;
-  }
-  
-  #right-bar {
-    width: 700px;
-    height: 400px;
-    float: right;
-    display: inline;
-    margin-top: 50px;
-    margin-left: 0px;
-  }
+#content {
+  height: 500px;
+  width: 1000px;
+  margin-top: auto;
+  margin-left: 0px;
+}
 
-  #text {
-    word-wrap: break-word;
-  }
+#right-bar {
+  width: 700px;
+  height: 400px;
+  float: right;
+  display: inline;
+  margin-top: 50px;
+  margin-left: 0px;
+}
 
-  .gallery {
-    /* visibility: hidden; */
-    display: none;
-    float: right;
-    width: auto;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-  
-  #left-bar {
-    float: left;
-    display: inline;
-    width: 200px;
-    margin-left: 0px;
-  }
+#text {
+  word-wrap: break-word;
+}
 
-  .tab {
-    margin-top: 50px;
-    height: 40px;
-    width: 120px;
-    text-align: center;
-    font-size: large;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
+.gallery {
+  /* visibility: hidden; */
+  display: none;
+  float: right;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
-  
+#left-bar {
+  float: left;
+  display: inline;
+  width: 200px;
+  margin-left: 0px;
+}
+
+.tab {
+  margin-top: 50px;
+  height: 40px;
+  width: 120px;
+  text-align: center;
+  font-size: large;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+

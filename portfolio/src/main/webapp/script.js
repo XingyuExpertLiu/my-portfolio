@@ -31,7 +31,7 @@ function shorter(x) {
  */
 function load() {
   var t = document.getElementById("text");
-  t.innerText = "This is my portfolio.\nI'm Xingyu Liu from Beijing Jiaotong University. I'll enter my 4th year studying computer science this September. Nice to meet you!";
+  t.innerText = "This is my portfolio.<br/>I'm Xingyu Liu from Beijing Jiaotong University. I'll enter my 4th year studying computer science this September.<br/>Nice to meet you!";
 }
 
 /**
@@ -40,7 +40,7 @@ function load() {
 function click1() {
   var text = document.getElementById("text");
   var gallery = document.getElementsByClassName("gallery");
-  text.innerText = "Some of My Projects:\r\n1.Front end for the game Splendor(in Google Girl Hackathon V)\n2.A gomoku game by HTML";
+  text.innerText = "Some of My Projects:<br/>1.Front end for the game Splendor(in Google Girl Hackathon V)<br/>2.A gomoku game by HTML";
   for (var i = 0; i < gallery.length; i++)
   {
     gallery[i].style.display = "none";
@@ -71,13 +71,16 @@ function getMessage() {
  */
 function handleResponse(response) {
   console.log('Handling the response.');
-  const textPromise = response.text();
+  const textPromise = response.json();
   textPromise.then(addMessageToDom);
 }
 
 /** Adds a random message to the DOM. */
 function addMessageToDom(message) {
   console.log('Adding message to dom: ' + message);
+  // console.log(message.x);
+  // console.log(message.y);
+  // console.log(message.z);
 
   const messageContainer = document.getElementById('text');
   messageContainer.innerText = message;
