@@ -85,3 +85,32 @@ function addMessageToDom(message) {
   const messageContainer = document.getElementById('text');
   messageContainer.innerText = message;
 }
+
+/** Adds a chart. */
+google.charts.load('current', {'packages':['timeline']});
+google.charts.setOnLoadCallback(drawChart);
+
+/** Creates a chart and adds it to the page. */
+function drawChart() {
+  const data = new google.visualization.DataTable();
+  
+  data.addColumn('string', 'Weather');
+  data.addColumn('date', 'From');
+  data.addColumn('date', 'To');
+  
+  data.addRows([
+    ['Sunny', new Date(2020, 7, 1), new Date(2020, 7, 2)],
+    ['Windy', new Date(2020, 7, 2), new Date(2020, 7, 3)],
+    ['Rainy', new Date(2020, 7, 3), new Date(2020, 7, 4)]
+  ]);
+
+  const options = {
+    'title': 'Weather for recent days',
+    'width':500,
+    'height':200
+  };
+
+  const chart = new google.visualization.Timeline(
+      document.getElementById('chart-container'));
+  chart.draw(data, options);
+}
