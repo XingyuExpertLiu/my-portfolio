@@ -19,7 +19,7 @@
       <div id="left-bar">
         <div class="tab" onmousemove="longer(this)" onmouseout="shorter(this)" onclick="click1()">My Projects</div>
         <div class="tab" onmousemove="longer(this)" onmouseout="shorter(this)" onclick="click2()">Image Gallery</div>  
-        <div class="tab" onmousemove="longer(this)" onmouseout="shorter(this)" onclick="getMessage()">Fetch a message!</div>  
+        <div class="tab" onmousemove="longer(this)" onmouseout="shorter(this)" onclick="getMessage()">Fetch comments!</div>  
       </div>
       <div id="right-bar">
         <textarea name="text" id="text" cols="30" rows="10"></textarea>
@@ -27,5 +27,12 @@
         <div class="gallery"><img class="pic" src="/images/3.jpg" alt="Took near my home last December"></div>
       </div>
     </div>
+    <form action="/data" method="POST">
+      <p>Leave a comment!</p>
+      <!-- <input type="text" name="content" value="YourName: YourComment"> -->
+        Nickname: <input type="text" name="nickname" value="nickname">
+        Content: <input type="text" name="content" value="content">
+      <input type="submit" />
+    </form>
   </body>
 </html>
