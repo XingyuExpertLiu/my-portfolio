@@ -1,9 +1,72 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+#up-bar {
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: x-large;    
 }
 
-#greeting-container {
-  margin-top: 20px;
+#icon {
+  margin-left: 5px;
+  margin-right: 5px;
+  float: left;
+  display: inline;
 }
+
+#name {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: left;
+  float: left;
+  display: inline;
+}
+
+#gitlink {
+  float: right;
+  text-align: right;
+  display: inline;
+}
+
+#content {
+  height: 400px;
+  width: 1000px;
+  margin-top: auto;
+  margin-left: 0px;
+}
+
+#right-bar {
+  width: 700px;
+  height: 400px;
+  float: right;
+  display: inline;
+  margin-top: 50px;
+  margin-left: 0px;
+}
+
+#text {
+  word-wrap: break-word;
+}
+
+.gallery {
+  /* visibility: hidden; */
+  display: none;
+  float: right;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#left-bar {
+  float: left;
+  display: inline;
+  width: 200px;
+  margin-left: 0px;
+}
+
+.tab {
+  margin-top: 50px;
+  height: 40px;
+  width: 120px;
+  text-align: center;
+  font-size: large;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
